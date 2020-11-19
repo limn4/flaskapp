@@ -8,7 +8,7 @@ COPY virt-assign3 /flaskapp
 WORKDIR /flaskapp
 RUN pip install --upgrade pip
 RUN pip3 install -r requirements.txt
-EXPOSE 5000
+
 RUN chmod 775 startup.sh
 ENTRYPOINT "./startup.sh"
 
