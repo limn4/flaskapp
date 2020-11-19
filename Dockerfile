@@ -13,6 +13,6 @@ WORKDIR /flaskapp
 RUN pip install --upgrade pip
 RUN pip3 install -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 8080
 RUN chmod 775 startup.sh
 ENTRYPOINT "./startup.sh"
