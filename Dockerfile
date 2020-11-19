@@ -6,7 +6,7 @@ RUN apt-get -y install python3 python3-setuptools python3-pip gunicorn3
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 COPY virt-assign3 /flaskapp
 WORKDIR /flaskapp
-RUN pip install --upgrade pip
+
 RUN pip3 install -r requirements.txt
 
 RUN chmod 775 startup.sh
